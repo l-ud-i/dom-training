@@ -18,8 +18,20 @@ function toggleDisplay(event) {
 /* ------------------------------------ */
 /* --- Exercice 2 --- */
 
-const scrolled = document.querySelector("#ex2 .exercice-sandbox :first-child")
-console.log(scrolled);
+// window.addEventListener('scroll', function(event) {
+//     let positionScroll = Math.floor(window.scrollY);
+//     const newText = document.querySelector("#ex2-scroll-value")
+
+//     newText.textContent = positionScroll;
+//     console.log(positionScroll);
+// });
+
+window.addEventListener('scroll', function(event) {
+    let positionScroll = Math.floor(window.scrollY);
+    document.querySelector("#ex2-scroll-value").textContent = positionScroll;
+    
+});
+
 
 
 /* ------------------------------------ */
