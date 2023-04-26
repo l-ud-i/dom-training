@@ -1,6 +1,6 @@
 /* ------------------------------------ */
 /* --- Exercice 1 --- */
-const disappear = document.querySelector("#ex1 .exercice-sandbox :nth-child(2)")
+const disappear = document.querySelector("#ex1 .exercice-sandbox :nth-child(2)");
 
 function toggleDisplay(event) {
     disappear.classList.toggle("js-text");
@@ -33,11 +33,17 @@ window.addEventListener('scroll', function(event) {
 });
 
 
-
 /* ------------------------------------ */
 /* --- Exercice 3 --- */
 
+const icons = document.querySelector("#ex3-animals");
 
+function changePlaceIcon(event) {
+    icons.appendChild(icons.firstElementChild);
+    }
+    document.querySelector(".js-button-exo3").addEventListener('click', changePlaceIcon);
+
+    
 /* ------------------------------------ */
 /* --- Exercice 4 --- */
 
